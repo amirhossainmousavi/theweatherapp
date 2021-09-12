@@ -42,7 +42,7 @@ function Weather(citys) {
             } else if (data.weather[0].main === "Drizzle") {
                 VideoBackground.src = 'image-video/Rainy.mp4'
             } else if (data.weather[0].main === "Rain") {
-                VideoBackground.src = 'image-video3/Rainy.mp4'
+                VideoBackground.src = 'image-video/Rainy.mp4'
             } else {
                 VideoBackground.src = 'image-video/Sunny.mp4'
             }
