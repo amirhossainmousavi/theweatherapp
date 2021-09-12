@@ -1,0 +1,21 @@
+@media (min-width: 992px) {
+    .intro-container {
+        .intro {
+            p {
+                color: #fff;
+                font-size: 7rem !important;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    .intro-container {
+        .intro {
+            p {
+                font-size: 5rem !important;
+            }
+        }
+    }
+}

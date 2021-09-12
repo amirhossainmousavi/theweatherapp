@@ -1,0 +1,279 @@
+@font-face {
+  font-family: iranSans;
+  src: url(../font/IRANSans.ttf);
+}
+
+@font-face {
+  font-family: iranSansmed;
+  src: url(../font/IRANSans_Medium.ttf);
+}
+
+@font-face {
+  font-family: iranSansbold;
+  src: url(../font/IRANSans_Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  direction: ltr;
+}
+
+main video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+main .intro-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: #fff;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .intro-container .intro p {
+  color: #000;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: none;
+}
+
+main .weather-container .search-container .search-detalis {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.01);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  position: fixed;
+  padding-top: 4vh;
+  opacity: 0;
+  z-index: -2;
+  overflow: auto;
+}
+
+main .weather-container .search-container .search-detalis .city-search {
+  width: 100%;
+  text-align: center;
+}
+
+main .weather-container .search-container .search-detalis .city-search input {
+  width: 100%;
+  padding: 17px 0px 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: left;
+  border-bottom: solid 2px #fff;
+  color: #fff;
+}
+
+main .weather-container .search-container .search-detalis .city-search ::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #fff;
+}
+
+main .weather-container .search-container .search-detalis .city-search :-ms-input-placeholder {
+  font-size: 1rem;
+  color: #fff;
+}
+
+main .weather-container .search-container .search-detalis .city-search ::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #fff;
+}
+
+main .weather-container .search-container .search-detalis .city-search ::placeholder {
+  font-size: 1rem;
+  color: #fff;
+}
+
+main .weather-container .search-container .search-detalis .city-search button {
+  position: absolute;
+  -webkit-transform: translate(-27px, 20px);
+          transform: translate(-27px, 20px);
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+main .weather-container .search-container .search-detalis .city-container {
+  overflow: auto;
+  height: 40vh;
+  margin-top: 2vh;
+}
+
+main .weather-container .search-container .search-detalis .city-container a {
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+main .weather-container .search-container .search-detalis .city-container a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+main .weather-container .search-container .search-detalis .weather-detalis {
+  border-top: solid 2px #fff;
+  border-radius: 2px;
+  height: 40vh;
+  overflow: auto;
+}
+
+main .weather-container .search-container .search-detalis .weather-detalis p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+main .weather-container .search-container .search-detalis .weather-detalis .detalis {
+  margin-top: 3rem;
+}
+
+main .weather-container .search-container .search-detalis .weather-detalis .detalis .Cloudy,
+main .weather-container .search-container .search-detalis .weather-detalis .detalis .Humidity,
+main .weather-container .search-container .search-detalis .weather-detalis .detalis .Wind,
+main .weather-container .search-container .search-detalis .weather-detalis .detalis .state {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+main .weather-container .search-container .search-detalis .weather-detalis .detalis span {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+main .weather-container .search-container .search-detalis .icon-return {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+main .weather-container .search-container .search-detalis .icon-return button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+main .detalis-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(28, 28, 28, 0.4);
+  overflow: auto;
+}
+
+main .detalis-container .weather-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .detalis-container .weather-info p:nth-child(1) {
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 700;
+  margin-bottom: -40px;
+  -webkit-transform: translate(22px);
+          transform: translate(22px);
+}
+
+main .detalis-container .weather-info p:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+main .detalis-container .weather-info p:nth-child(3) {
+  color: #fff;
+  font-size: 20px;
+}
+
+main .detalis-container .icon-search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 3vh;
+  position: absolute;
+  bottom: 0;
+}
+
+main .detalis-container .icon-search button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .intro-container .intro p {
+    color: #fff;
+    font-size: 7rem !important;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 765px) {
+  .intro-container .intro p {
+    font-size: 5rem !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

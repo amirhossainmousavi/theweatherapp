@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link main.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--link bootstrap5-->
+    <link rel="stylesheet" href="library/bootstrap/dist/css/bootstrap.min.css">
+    <!--link material icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link iziToast-->
+    <link rel="stylesheet" href="library/iziToast-master/dist/css/iziToast.min.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <main>
+        <!--video background-->
+        <video autoplay muted loop id="videobackground">
+            <source src="image-video/Rainy.mp4" type="video/mp4">
+          </video>
+        <!--/video background-->
+        <!--introSection-->
+        <div class="intro-container">
+            <div class="intro">
+                <p class="introText">The Weather App</p>
+            </div>
+        </div>
+        <!--/introSection-->
+        <!--weather section-->
+        <div class="weather-container">
+            <div class="search-container col-12 col-sm-12 col-md-12 ">
+                <div class="search-detalis d-flex flex-column">
+                    <div class="container">
+                        <!--search input-->
+                        <div class="city-search col-12">
+                            <input type="text" name="text" autocomplete="off" placeholder="Another location">
+                            <button type="submit" class="material-icons" id="buttonvalue">search</button>
+                        </div>
+                        <!--/search input-->
+                        <!--city name template-->
+                        <div class="city-container col-12">
+                            <a>New York</a>
+                            <a>Manchester</a>
+                            <a>London</a>
+                            <a>Toronto</a>
+                        </div>
+                        <!--/city name template-->
+                        <!--weather detalis-->
+                        <div class="weather-detalis">
+                            <p>Weather Detalis</p>
+                            <div class="detalis">
+                                <div class="Cloudy">
+                                    <span>Cloudy </span>
+                                    <span class="clo">86%</span>
+                                </div>
+                                <div class="Humidity">
+                                    <span>Humidity</span>
+                                    <span class="Hum">64%</span>
+                                </div>
+                                <div class="Wind">
+                                    <span>Wind</span>
+                                    <span class="win">8km/h</span>
+                                </div>
+                                <div class="state">
+                                    <span>Maximum temperature</span>
+                                    <span class="temp-max">8mm</span>
+                                </div>
+                                <div class="state">
+                                    <span>Minimum temperature</span>
+                                    <span class="temp-min">8mm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/weather detalis-->
+                    </div>
+                    <!--close icon-->
+                    <div class="icon-return">
+                        <button class="material-icons close-button">close</button>
+                    </div>
+                    <!--/close icon-->
+                </div>
+            </div>
+            <!-city datalis--->
+            <div class="detalis-container">
+                <!--weather info-->
+                <div class="weather-info">
+                    <p class="temp">08<span>&#176;</span></p>
+                    <p class="city">London</p>
+                    <p class="date">06:09 - sunday, 6 Oct 19</p>
+                </div>
+                <!--/weather info-->
+                <!--search icon-->
+                <div class="icon-search">
+                    <button class="material-icons search-button">search</button>
+                </div>
+                <!--/search icon-->
+            </div>
+            <!-/city datalis--->
+        </div>
+        <!--/weather section-->
+    </main>
+    <!--script gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="js/Gsap.js"></script>
+    <!--script bootstrap-->
+    <script src="library/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--script iziToast-->
+    <script src="library/iziToast-master/dist/js/iziToast.min.js"></script>
+    <!--script App.js-->
+    <script src="js/App.js"></script>
+</body>
+
+</html>
