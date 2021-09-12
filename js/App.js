@@ -32,19 +32,19 @@ function Weather(citys) {
             temp.innerHTML = deg;
             //Change backgeound
             if (data.weather[0].main === "Thunderstorm") {
-                VideoBackground.src = 'https://s18.picofile.com/d/8440660942/ff56f815-49ba-4c9d-aef0-1071b108ab4d/Thunderstorm.mp4'
+                VideoBackground.src = 'image-video/Thunderstorm.mp4'
             } else if (data.weather[0].main === "Snow") {
-                VideoBackground.src = 'https://s18.picofile.com/d/8440660918/59fff78a-eaae-4873-87d2-c631c12f0cb7/Snowy.mp4'
+                VideoBackground.src = 'image-video/Snowy.mp4'
             } else if (data.weather[0].main === "Atmosphere") {
-                VideoBackground.src = 'https://s18.picofile.com/d/8440660818/e737b524-0b9b-401f-8905-94449f96f861/Atmosphere.mp4'
+                VideoBackground.src = 'image-video/Atmosphere.mp4'
             } else if (data.weather[0].main === "Clouds") {
-                VideoBackground.src = 'https://s19.picofile.com/d/8440660750/8c25aecc-d1d6-4253-af36-54ad5acdc241/Clouds.mp4'
+                VideoBackground.src = 'image-video/Clouds.mp4'
             } else if (data.weather[0].main === "Drizzle") {
-                VideoBackground.src = 'https://s18.picofile.com/d/8440660534/280291e8-4a97-401d-b0de-792d07a925b3/Rainy.mp4'
+                VideoBackground.src = 'image-video/Rainy.mp4'
             } else if (data.weather[0].main === "Rain") {
-                VideoBackground.src = 'https://s18.picofile.com/d/8440660534/280291e8-4a97-401d-b0de-792d07a925b3/Rainy.mp4'
+                VideoBackground.src = 'image-video3/Rainy.mp4'
             } else {
-                VideoBackground.src = 'https://s18.picofile.com/d/8440660234/5934c89f-9e55-4bd1-af42-f157e995808c/Sunny.mp4'
+                VideoBackground.src = 'image-video/Sunny.mp4'
             }
             //write detalis in Html
             Cloudy.innerHTML = `${data.clouds.all}%`
